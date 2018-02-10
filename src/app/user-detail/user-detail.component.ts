@@ -19,7 +19,7 @@ Exart the id from the route
 Acquire the hero with that id from the server via the UserService */
 export class UserDetailComponent implements OnInit {
 
-  @Input()user = User;
+  @Input() user = User;
   /*ActiveRoute holds the information about the
   route to this instance of the UserDetailComponent. 
   This component is interested in the route's bag of 
@@ -39,7 +39,8 @@ export class UserDetailComponent implements OnInit {
   getUser(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.userService.getUser(id)
-      .subscribe(user => this.user = User);
+    /*WTF IS GOING ON HERE??!!!?!??! */
+      .subscribe(user => this.user = user);
   }
 
   goBack(): void {

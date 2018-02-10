@@ -1,7 +1,7 @@
 <div *ngIf="user">
  
-    <h2>{{ selectedUser.name | uppercase }} Details</h2>
-    <div><span>id: <input [(ngModel)]="user.id" placeholder="id"></span>{{user.id}}</div>
+    <h2>{{ user.name | uppercase }} Details</h2>
+    <div><span>id: <input [(ngModel)]="user.id" placeholder="id"></span></div>
     <div>
       <label>name:
         <input [(ngModel)]="user.name" placeholder="name">
@@ -11,3 +11,4 @@
     <p></p>
     <button (click)="goBack()" class = "btn btn-default">go back</button>
   </div>
+  
