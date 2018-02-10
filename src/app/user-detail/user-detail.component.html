@@ -1,6 +1,6 @@
 <div *ngIf="user">
- 
-    <h2>{{ selectedUser.name | uppercase }} Details</h2>
+    <!--user.name set instead of selectedUser-->
+    <h2>{{ user.name | uppercase }} Details</h2>
     <div><span>id: <input [(ngModel)]="user.id" placeholder="id"></span>{{user.id}}</div>
     <div>
       <label>name:
