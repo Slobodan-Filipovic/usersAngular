@@ -1,0 +1,10 @@
+<h3>Some Users</h3>
+<div class="grid grid-pad">
+  <!--The routerLink link to the navigate via the parameterized 
+  dashboard route-->
+    <a *ngFor="let user of users" class="col-1-4" routerLink="/detail/{{user.id}}">
+    <div class="module user">
+      <h4>{{user.name}}</h4>
+    </div>
+  </a>
+</div>

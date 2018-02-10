@@ -1,0 +1,28 @@
+<!--<h2>{{ user.name | uppercase }} Details</h2>
+<div><span>id: </span>{{user.id}}</div>
+<div><span>name: </span>{{user.name}}</div>-->
+
+       
+ <!--
+<h2>{{ user.name | uppercase }}</h2>
+<div><span>id: </span>{{user.id}}</div>
+<div>
+    <label>name:
+        [(ngModel)] is Angular two way data binding syntax
+      <input [(ngModel)]="user.name" placeholder="name">
+    </label>
+</div> -->
+ 
+<h2>Users</h2>
+<ul class="users">
+  <li *ngFor="let user of users">
+    <!--[class.selected]="user === selectedUser"
+    (click)="onSelect(user)"-->
+    <a routerLink="/detail/{{user.id}}">
+        <span class="badge">{{user.id}}</span> {{user.name}}
+    </a>
+  </li>
+</ul>
+<!-- We removed this so we can enable routing to the HeroDetailComponent. -->
+<!--  <app-user-detail [user]="selectedUser"></app-user-detail> -->
+ 
