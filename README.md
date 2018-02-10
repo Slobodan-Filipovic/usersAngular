@@ -1,3 +1,13 @@
+# User/user error in user-detail.component.ts
+ getUser(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.userService.getUser(id)
+      .subscribe(user => this.user = user);
+  }
+  
+  .subscribe(user => this.user = user);
+  figuring out why user gives correct output but User is expected
+
 # RedoOfNg
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.
