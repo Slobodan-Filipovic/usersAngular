@@ -7,6 +7,8 @@
   
   .subscribe(user => this.user = user);
   figuring out why user gives correct output and 'User' is not assignable to type 'typeof User' error
+  
+  Eureka: Learn to read fcking errors! Console > Visual Studio Code errors. 
 
 
 # RedoOfNg
