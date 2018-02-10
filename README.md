@@ -6,7 +6,8 @@
   }
   
   .subscribe(user => this.user = user);
-  figuring out why user gives correct output but User is expected
+  figuring out why user gives correct output and 'User' is not assignable to type 'typeof User' error
+
 
 # RedoOfNg
 
